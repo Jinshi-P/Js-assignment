@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="images" href="images/" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-color: rgb(168, 169, 182);">
+    <script src="script.js"></script>
+    <header>
+        <div class="container">
+          <a href=""
+            ><img src="images/images.jpg" width="40px" height="40px"
+          /></a>
+          <nav>
+             
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="features.html">Features</a>
+            <a href="contact.html">contact</a>
+            
+            
+            <form action="login.html">
+                <button type="submit" onc>Log in</button>
+               </form>
+          </nav>
+        </div>
+      </header>
+      
+     <div class="right-section" >
+        
+        <form action="" autocomplete="off">
+           <h4>Please fill the form</h4>
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" onkeyup="validateName()"/>
+            <span id="nameError"></span>
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" onkeyup="validateEmail()" />
+            <span id="emailError"></span>
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"onkeyup="validatePassword()"
+            />
+            <span id="passError"></span>
+          </div>
+          <div class="input-group">
+            <label for="password">Confirm Password</label>
+            <input
+              type="password"
+              id="cnfrmPassword"
+              placeholder="confirm your password"onkeyup=" validateCnfrmpassword()"
+            />
+            <span id="cnfrmPassError"></span>
+          </div>
+          <div class="submit-section">
+            <button id ="signup" onclick="return formValidate()">Sign up</button>
+          </div>
+        </form>
+      </div>
+    
+      <footer style="background-color: beige;">
+        Designed and developed by &copy Entri student
+      </footer>
+</body>
+</html>
